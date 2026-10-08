@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "node-cron": "^4.6.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "github:pedroslopez/whatsapp-web.js#main"
+  }
+}
