@@ -63,7 +63,20 @@ _Comandos de moderação: só admins._`;
 // ================= CLIENT =================
 const client = new Client({
     authStrategy: new LocalAuth(),
-    puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
+    puppeteer: {
+        headless: true,
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/usr/bin/google-chrome-stable',
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-accelerated-2d-canvas',
+            '--no-first-run',
+            '--no-zygote',
+            '--single-process', 
+            '--disable-gpu'
+        ],
+    }
 });
 
 client.on('auth_failure', msg => console.log('Falha na autenticação', msg));
