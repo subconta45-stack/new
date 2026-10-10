@@ -82,8 +82,8 @@ const client = new Client({
 
 client.on('auth_failure', msg => console.log('Falha na autenticação', msg));
 client.on('qr', qr => {
-    console.log('QR RECEIVED');
-    qrcode.generate(qr, { small: true });
+    console.log('--- COLE ESTE CÓDIGO OU USE UM GERADOR DE QR CODE ONLINE ---');
+    console.log(qr);
 });
 client.on('ready', () => console.log('Bot iniciado :3'));
 
