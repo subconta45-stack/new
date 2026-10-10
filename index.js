@@ -65,25 +65,17 @@ const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
         headless: true,
-        args: [
-            '--no-sandbox',
-            '--disable-setuid-sandbox',
-            '--disable-dev-shm-usage',
-            '--disable-accelerated-2d-canvas',
-            '--no-first-run',
-            '--no-zygote',
-            '--disable-gpu',
-            '--disable-extensions',
-            '--hide-scrollbars',
-            '--mute-audio'
-        ],
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu']
     }
 });
 
+// Se preferir parear por número (substitua pelo seu número com DDI e DDD, ex: 5511999999999)
+// Opcional: client.on('qr', ...) pode ser substituído ou complementado
+
 client.on('auth_failure', msg => console.log('Falha na autenticação', msg));
-client.on('qr', qr => {
-    console.log('--- COLE ESTE CÓDIGO OU USE UM GERADOR DE QR CODE ONLINE ---');
-    console.log(qr);
+client.on('qr', async (qr) => {
+    // Se a plataforma gerar uma URL web do QR code, você pode usá-la em geradores compatíveis
+    console.log('QR Code gerado. Acesse os logs detalhados.');
 });
 client.on('ready', () => console.log('Bot iniciado :3'));
 
