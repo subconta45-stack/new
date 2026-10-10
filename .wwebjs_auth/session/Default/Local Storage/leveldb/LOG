@@ -1,3 +1,6 @@
-2026/10/08-19:55:31.354 5100 Reusing MANIFEST C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
-2026/10/08-19:55:31.390 5100 Recovering log #13
-2026/10/08-19:55:31.395 5100 Reusing old log C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/000013.log 
+2026/10/09-07:09:22.152 2920 Creating DB C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb since it was missing.
+2026/10/09-07:09:22.234 2920 Reusing MANIFEST C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/10/09-07:09:22.251 2920 Recovering log #16
+2026/10/09-07:09:22.260 2920 Reusing old log C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/000016.log 
+2026/10/09-07:09:22.263 2920 Delete type=2 #5
+2026/10/09-07:09:22.263 2920 Delete type=2 #18

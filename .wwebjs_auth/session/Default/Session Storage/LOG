@@ -1,3 +1,4 @@
-2026/10/08-19:55:32.235 5100 Reusing MANIFEST C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Session Storage/MANIFEST-000001
-2026/10/08-19:55:32.238 5100 Recovering log #3
-2026/10/08-19:55:32.245 5100 Reusing old log C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Session Storage/000003.log 
+2026/10/09-07:09:22.120 204c Creating DB C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Session Storage since it was missing.
+2026/10/09-07:09:22.222 204c Reusing MANIFEST C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Session Storage/MANIFEST-000001
+2026/10/09-07:09:22.240 204c Recovering log #3
+2026/10/09-07:09:22.258 204c Reusing old log C:\Users\Matheus\Downloads\Bot_whatsapp\.wwebjs_auth\session\Default\Session Storage/000003.log 
