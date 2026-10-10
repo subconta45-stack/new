@@ -63,10 +63,7 @@ _Comandos de moderação: só admins._`;
 // ================= CLIENT =================
 const client = new Client({
     authStrategy: new LocalAuth(),
-    puppeteer: {
-        headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu']
-    }
+    
 });
 
 // Se preferir parear por número (substitua pelo seu número com DDI e DDD, ex: 5511999999999)
