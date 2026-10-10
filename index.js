@@ -74,8 +74,8 @@ const client = new Client({
 
 client.on('auth_failure', msg => console.log('Falha na autenticação', msg));
 client.on('qr', async (qr) => {
-    // Se a plataforma gerar uma URL web do QR code, você pode usá-la em geradores compatíveis
-    console.log('QR Code gerado. Acesse os logs detalhados.');
+    console.log('Cole este link em um navegador ou gerador de QR code:');
+    console.log(`https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(qr)}`);
 });
 client.on('ready', () => console.log('Bot iniciado :3'));
 
